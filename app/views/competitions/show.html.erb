@@ -1,0 +1,8 @@
+<h1>Show Page</h1>
+  <p><%= @competition.name %></p>
+  <p><%= @competition.location %></p>
+  <p><%= @competition.sport %></p>
+  <p><% @team.each do |team| %></p>
+  <p><%= team.nickname %></p>
+  <p><%= team.hometown %></p>
+<% end %>

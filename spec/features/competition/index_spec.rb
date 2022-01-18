@@ -15,7 +15,7 @@ RSpec.describe 'Competition index page' do
     expect(page).to have_content(@competition_2.name)
     expect(page).to have_content(@competition_3.name)
     expect(page).to have_content(@competition_4.name)
-    save_and_open_page
+    
     click_link "My Show Page Link #{@competition_1.id}"
     expect(current_path).to eq("/competitions/#{@competition_1.id}")
   end
